@@ -3,9 +3,6 @@ from django.core.exceptions import ValidationError
 
 # Create your models here.
 
-def nameFile(instance, filename):
-    return '/'.join(['images', str(instance.name), filename])
-
 def validate_image(image):
     file_size = image.size
     print("size-----------",file_size)
